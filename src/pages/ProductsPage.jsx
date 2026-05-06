@@ -4,11 +4,13 @@ import axios from "axios";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import ProductCard from "../components/Product/ProductCard";
+import ProductQuickView from "../components/Modal/ProductQuickView";
 
 import Loading from "../components/Loading/Loading";
 
 function ProductsPage() {
     const [products, setProducts] = useState([]);
+    const [selectedProduct, setSelectedProduct] = useState(null);
 
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
@@ -223,7 +225,9 @@ function ProductsPage() {
 
                             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-4">
                                 {filteredProducts.map((product) => (
-                                    <ProductCard key={product.id} product={product} />
+                                    <ProductCard key={product.id}
+                                          product={product}
+                                          onQuickView={() => setSelectedProduct(product)}/>
                                 ))}
                             </div>
 
@@ -233,7 +237,12 @@ function ProductsPage() {
 
                 </div>
             </section>
-
+{selectedProduct && (
+  <ProductQuickView
+    product={selectedProduct}
+    onClose={() => setSelectedProduct(null)}
+  />
+)}
             <Footer />
         </>
     );
