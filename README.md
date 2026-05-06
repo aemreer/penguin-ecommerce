@@ -1,16 +1,55 @@
-# React + Vite
+# Penguin E-Commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Penguin, React ekosistemi kullanılarak geliştirilmiş modern ve responsive bir e-ticaret web uygulamasıdır.  
+Proje boyunca modern UI/UX anlayışı, performans, kullanıcı deneyimi ve component mimarisi odak alınmıştır.
 
-Currently, two official plugins are available:
+## Canlı Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[https://penguin-clothing.netlify.app](penguin-clothing)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Özellikler
 
-## Expanding the ESLint configuration
+- Modern ve responsive tasarım
+- API ile ürün listeleme
+- Ürün detay sayfası
+- Kategori bazlı ürün filtreleme
+- Debounce destekli ürün arama sistemi
+- Redux Toolkit ile sepet yönetimi
+- Ürün ekleme / silme / miktar artırma azaltma
+- Firebase Authentication sistemi
+- Protected Route yapısı
+- Quick View ürün modalı
+- Premium toast bildirim sistemi
+- Swiper.js hero slider yapısı
+- Framer Motion animasyonları
+- Özel loading ekranları
+- Scroll restoration sistemi
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Kullanılan Teknolojiler
+
+- React
+- Vite
+- Tailwind CSS
+- Redux Toolkit
+- React Router DOM
+- Axios
+- Firebase Authentication
+- Framer Motion
+- Swiper.js
+- React Hot Toast
+
+---
+
+## Kurulum
+
+Projeyi klonlayın:
+
+```bash
+git clone https://github.com/yourusername/penguin-ecommerce.git
+cd penguin-ecommerce
+npm install
+npm run dev
