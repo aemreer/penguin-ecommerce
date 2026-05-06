@@ -5,7 +5,7 @@ Proje boyunca modern UI/UX anlayışı, performans, kullanıcı deneyimi ve comp
 
 ## Canlı Demo
 
-[https://penguin-clothing.netlify.app](penguin-clothing)
+🔗 [Penguin](https://penguin-clothing.netlify.app)
 
 ---
 
